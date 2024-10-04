@@ -1,24 +1,22 @@
-import React from "react";
-import { Typography, Button, Container, Grid } from "@mui/material";
+import React, { useState, useEffect, useCallback } from "react";
+import { Typography, Container, Grid } from "@mui/material";
 import { styled } from "@mui/system";
-import img from "../../assets/h1_hero.png"
+import img from "../../assets/h1_hero.png";
 
 const StyledSliderArea = styled("div")`
-margin:0px
   position: relative;
-  background-image:url(${img}) ;
+  background-image: url(${img});
   background-size: cover;
   background-position: center;
-  display:flex;
-
-  align-items:center;
-
-  opacity:0.8;
-  height:100vh;
-
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  opacity: 0.8;
+  margin: 0;
 `;
-const AnimatedSpan = styled('span')`
-  animation: fade-in 2s ease-in-out infinite;
+
+const AnimatedSpan = styled("span")`
+  animation: fade-in 2s ease-in-out;
 
   @keyframes fade-in {
     0% {
@@ -33,81 +31,72 @@ const AnimatedSpan = styled('span')`
   }
 `;
 
-const StyledSingleSlider = styled("div")`
-  display: flex;
-  align-items: center;
-`;
-
 const StyledHeroCaption = styled("div")`
   text-align: left;
 `;
 
 const Screen = () => {
-    const words = ["health", "sushi", "steak"];
-    const [currentIndex, setCurrentIndex] = React.useState(0);
-    
-    React.useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-      }, 2000);
-    
-      return () => {
-        clearInterval(interval);
-      };
-    }, []);
-    const currentword=words[currentIndex]
-    
-    
+  const words = ["Health", "Alafia", "santé"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const updateWordIndex = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
+  }, [words.length]);
+
+  useEffect(() => {
+    const interval = setInterval(updateWordIndex, 2000);
+    return () => clearInterval(interval);
+  }, [updateWordIndex]);
+
+  const currentWord = words[currentIndex];
+
   return (
     <StyledSliderArea>
-      <div className="slider-active">
-       
-        <StyledSingleSlider>
-          <Container>
-            <Grid container>
-              <Grid item xs={12} sm={9} md={8} lg={9} xl={7}>
-                <StyledHeroCaption>
-                  <Typography
-                    variant="subtitle1"
-                    sx={{
-                      color: "black",
-                      fontSize: "40px",
-                      fontWeight: "bold",
-                      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)", 
-                    }}
-                  >
-                    Committed to success
-                  </Typography>
-                  <Typography
-                    variant="h2"
-                    component="h1"
-                    className="cd-headline letters scale"
-                  >
-                    We care about your {' '}
-                    <strong className="cd-words-wrapper">
-                      <AnimatedSpan >{currentword}</AnimatedSpan>
-                    </strong>
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    data-animation="fadeInLeft"
-                    data-delay="0.1s"
-                    fontSize={20}
-                  >
-                    Efficient hospital management system streamlining
-                    operations, enhancing patient care, and optimizing resource
-                    allocation
-                  </Typography>
-                 
-                </StyledHeroCaption>
-              </Grid>
-            </Grid>
-          </Container>
-        </StyledSingleSlider>
-      </div>
+      <Container>
+        <Grid container>
+          <Grid item xs={12} sm={9} md={8} lg={9} xl={7}>
+            <StyledHeroCaption>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  color: "black",
+                  fontSize: "40px",
+                  fontWeight: "bold", // Bold
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+                }}
+              >
+                Committed to success
+              </Typography>
+              <Typography
+                variant="h2"
+                component="h1"
+                sx={{
+                  color: "black", // Black text
+                  fontWeight: "bold", // Bold text
+                }}
+              >
+                We care about your{" "}
+                <strong>
+                  <AnimatedSpan>{currentWord}</AnimatedSpan>
+                </strong>
+              </Typography>
+              <Typography
+                variant="body1"
+                fontSize={20}
+                sx={{
+                  color: "black", // Black text
+                  fontWeight: "bold", // Bold text
+                }}
+              >
+                Efficient hospital management system streamlining operations,
+                enhancing patient care, and optimizing resource allocation.
+              </Typography>
+            </StyledHeroCaption>
+          </Grid>
+        </Grid>
+      </Container>
     </StyledSliderArea>
   );
 };
 
 export default Screen;
-

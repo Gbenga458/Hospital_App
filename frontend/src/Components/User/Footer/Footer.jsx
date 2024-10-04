@@ -30,7 +30,7 @@ function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             {'Developed with 🖤 by '}
-            <strong><a className='text-style' href="#" target="_blank" rel="noreferrer noopener">bastolaronak</a> </strong>{'Copyright ©'}
+            <strong><a className='text-style' href="#" target="_blank" rel="noreferrer noopener">Gbenga</a> </strong>{'Copyright ©'}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
@@ -58,7 +58,7 @@ const Footer = () => {
                                             color='primary'
                                             fontSize='large' />
                                     </Avatar>
-                                    Health Haven Hospital
+                                    UITH Hospital
                                 </Typography>
                                 <Divider />
                             </Box>
@@ -69,7 +69,7 @@ const Footer = () => {
                                 spacing={1} >
                                 <Avatar sx={{ mt: 1, bgcolor: pink[500] }}>
                                     <LocationOnIcon />
-                                </Avatar><span>kathmandu ,Nepal</span>
+                                </Avatar><span>Ilorin ,Kwara</span>
                             </Stack >
 
                             <Stack direction="row"
@@ -80,7 +80,7 @@ const Footer = () => {
                                     <EmailIcon />
                                 </Avatar>
                                 <a className='text-style' href="mailto:bastolaronak12@gmail.com">
-                                bastolaronak12@gmail.com
+                                gbengabusayo765@gmail.com
                                 </a>
                             </Stack >
 
@@ -91,8 +91,8 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
                                     <CallIcon />
                                 </Avatar>
-                                <a className='text-style' href="tel:01680xxx86">
-                                +977-9862164447
+                                <a className='text-style' href="tel:+2348105309866">
+                                +2348105309866
                                 </a>
                             </Stack >
 
@@ -132,7 +132,7 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, mt: 1, bgcolor: pink[500] }}>
                                     <FacebookIcon />
                                 </Avatar>
-                                <a className='text-style' href="#" target="_blank" rel="noopener noreferrer" >
+                                <a className='text-style' href="https://web.facebook.com/gbenga.ologbonsaiye.5" target="_blank" rel="noopener noreferrer" >
                                     Facebook
                                 </a>
                             </Stack >
@@ -144,7 +144,7 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
                                     <LinkedInIcon />
                                 </Avatar>
-                                <a className='text-style' href="#" target="_blank" rel="noopener noreferrer" >
+                                <a className='text-style' href="https://www.linkedin.com/in/gbenga-busayo/" target="_blank" rel="noopener noreferrer" >
                                     LinkedIn
                                 </a>
                             </Stack >
@@ -156,7 +156,7 @@ const Footer = () => {
                                 <Avatar sx={{ mb: 1, bgcolor: pink[500] }}>
                                     <GitHubIcon />
                                 </Avatar>
-                                <a className='text-style' href="#" target="_blank" rel="noopener noreferrer" >
+                                <a className='text-style' href="https://github.com/Gbenga458" target="_blank" rel="noopener noreferrer" >
                                     GitHub
                                 </a>
                             </Stack >

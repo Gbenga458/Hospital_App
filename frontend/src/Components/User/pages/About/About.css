@@ -5,25 +5,31 @@
     align-items: center;
     gap: 24px;
     background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
 /* Image */
 .about-image-content {
-    width: 50%;
+    flex-basis: 50%;
     max-width: 100%;
     text-align: center;
 }
 .about-image1 {
     width: 80%;
     height: auto;
+    border-radius: 8px; /* Optional: Adds a subtle border radius */
 }
+
 /* Text */
 .about-text-content {
-    width: 50%;
+    flex-basis: 50%;
+    max-width: 100%;
 }
 .about-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem; /* Responsive size using rem */
     font-weight: bold;
+    margin-bottom: 16px; /* Adds some margin for spacing */
 }
 .about-title > span {
     position: relative;
@@ -42,53 +48,55 @@
     margin: 32px 0;
     color: #4d4b4b;
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    letter-spacing: .7px;
-    line-height: 1.7rem;
+    font-size: 1.125rem; /* Responsive font size using rem */
+    letter-spacing: 0.7px;
+    line-height: 1.7;
 }
 .about-text-title {
-    margin: 0 0 24px 0;
+    margin-bottom: 24px;
     color: #4d4b4b;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem; /* Responsive size using rem */
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
 }
+
 /* Steps */
 .about-text-step {
     margin: 16px 0;
 }
 .about-text-sTitle {
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem; /* Rem unit for consistency */
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
 }
 .about-text-description {
     margin: 8px 24px;
     color: #4d4b4b;
     font-family: 'Rubik', sans-serif;
-    letter-spacing: .7px;
-    line-height: 1.6rem;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
 }
+
+/* Icon styling */
 .fa-icon {
     color: #9D2553;
 }
-/* Responsive */
+
+/* Responsive Design */
 @media screen and (max-width: 1000px) {
     .about-section {
-        display: block;
+        flex-direction: column;
+        text-align: center; /* Center-aligns text content on small screens */
     }
-    .about-image-content {
-        width: 100%;
+    .about-image-content,
+    .about-text-content {
+        flex-basis: 100%;
         max-width: 100%;
-        margin: 0 0 32px 0;
     }
     .about-image1 {
         width: 100%;
-        height: 100%;
-    }
-    .about-text-content {
-        width: 100%;
+        height: auto;
     }
 }

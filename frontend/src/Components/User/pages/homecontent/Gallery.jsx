@@ -26,47 +26,47 @@ export default function Gallery() {
 
 const itemData = [
   {
-    img: 'https://cdn.pixabay.com/photo/2020/03/14/17/05/virus-4931227_640.jpg',
+     img: 'https://ix-cdn.b2e5.com/images/47992/47992_2d046563062f4037a1834ec32ac9ab04_1521224323.jpeg',
     title: 'Bed',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2013/02/09/04/19/surgery-79584_640.jpg',
+     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUWPDe74fNNJCnMWF3_ccJ-tBkUC0kVB4DRQ&s',
     title: 'Books',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2016/11/08/05/29/operation-1807543_640.jpg',
+     img: 'https://images.squarespace-cdn.com/content/v1/5601a1b2e4b0eaa138babe0c/1500860972078-4QWM119B45LP5RM3UZZ8/surgicalteam.jpg?format=1500w',
     title: 'Sink',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2017/07/23/10/44/dentist-2530990_640.jpg',
+     img: 'https://luxedental.com.ng/wp-content/uploads/2024/08/Cost-of-Tooth-Extraction-in-Lagos.jpg',
     title: 'Kitchen',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2013/02/24/01/17/surgery-85574_640.jpg',
+     img: 'https://hms.harvard.edu/sites/default/files/2024-05/haiti_global_surgery_850.jpg',
     title: 'Blinds',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2017/06/28/14/03/dental-2450751_640.jpg',
+     img: 'https://dentalclinics.osu.edu/sites/default/files/styles/wide_16x9/public/2024-02/GroupStudentClinic.jpg?itok=q5vgnobM',
     title: 'Chairs',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_640.jpg',
+    img: 'https://swiftss.org/wp-content/uploads/2021/01/IMAG4965-scaled.jpg',
     title: 'Laptop',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2020/04/19/20/10/test-tube-5065426_640.jpg',
+    img: 'https://bouve.northeastern.edu/wp-content/uploads/2023/05/what-do-pharmacist-do-northeastern-graduate.webp',
     title: 'Doors',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2018/08/02/07/50/medical-procedures-3579029_640.jpg',
+    img: 'https://longingmedicalcentre.ng/wp-content/uploads/2020/12/operation-surgery-hospital-80124.jpg',
     title: 'Coffee',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2014/11/12/19/25/diabetes-528678_640.jpg',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjUhIiDX_pImd4sf8r7TeLfkIc7wVtnZ5Iw&s',
     title: 'Storage',
   },
   {
-    img: 'https://cdn.pixabay.com/photo/2017/05/23/21/01/jar-2338584_640.jpg',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjTzKbdZfWid-hvwT5QcnSOQEWKVT96_0lg&s',
     title: 'Candle',
   },
   
